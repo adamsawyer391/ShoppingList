@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/nameAndAmountLayout"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:id="@+id/tvName"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:id="@+id/tvAmount"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/ivDelete"
+        android:src="@drawable/ic_delete"
+        android:layout_below="@id/nameAndAmountLayout"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/delete_item" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_below="@id/nameAndAmountLayout"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/ivAdd"
+            android:src="@drawable/ic_add"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/increase_amount" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/ivSubtract"
+            android:src="@drawable/ic_subtract"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/decrease_amount" />
+
+    </LinearLayout>
+
+</RelativeLayout>

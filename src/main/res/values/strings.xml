@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="delete_item">delete item</string>
+    <string name="increase_amount">increase amount</string>
+    <string name="decrease_amount">decrease amount</string>
+    <string name="add_a_grocery_item">Add a grocery item</string>
+    <string name="add_a_new_shooping_list_item">Add a New Shooping List Item</string>
+</resources>
